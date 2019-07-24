@@ -35,7 +35,7 @@ end
 
 % Semilog plot of h vs. errVec
 figure;
-semilogy(hRange,errVec);
+loglog(hRange,errVec);
 xlabel('$h$','interpreter','latex');
 ylabel('Norm of error vector','interpreter','latex');
 

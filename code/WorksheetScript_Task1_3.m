@@ -6,7 +6,7 @@ close all;
 
 %% Task 1 - Constructing M
 % Write function FDM(N)
-% Define N, construct linspaces x and y
+% Request N, construct vectors x and y, then meshgrid X,Y.
 
 N = input('Number of interior points to use (N): ');
 x = linspace(0,1,N+2);  x = x(2:end-1); %shave off boundary points
