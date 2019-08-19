@@ -10,6 +10,8 @@ install:
 
 script:
   - nbfancy configure -y all_magic
+  - nbfancy rerun
+  - nbfancy rerun --output_dir=worksheet worksheet
   - nbfancy render
   - nbfancy render --output_dir=fancyws worksheet
   - nbfancy html
@@ -19,7 +21,7 @@ script:
 
 deploy:
   provider: pages
-  repo: JDBetteridge/samba_induction_python
+  repo: JDBetteridge/samba_induction_matlab
   target-branch: gh-pages
   local-dir: html
   github_token: $GITHUB_TOKEN
