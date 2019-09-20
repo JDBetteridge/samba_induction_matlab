@@ -16,6 +16,7 @@ script:
   - nbfancy html --output_dir=html/worksheet fancyws
   - cp html/worksheet/01_matlab.html html/index.html
   - cp html/worksheet/02_placeholder_solutions.html html/01_matlab-soln.html
+  - cp data/ html/
 
 deploy:
   provider: pages
