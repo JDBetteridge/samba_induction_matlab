@@ -1,0 +1,9 @@
+Some typos that came up in the session in Induction Week 2019/20; but which I haven't fixed and will do so when we review the material next year.
+
+Exercise about errors (lesson 08) - The matrix A is defined as a random matrix, but then should have a sub-block set to a pre-determined matrix. The solution code doesn't match the exercise code, and consequently doesn't return a warning. The correct sequence of commands is
+A = rand(5,4);
+A(2:4,2:4) = [1 2 3; 4 5 6; 7 8 9];
+b = ones(7,1);
+x = A(2:4,2:4)\b(1:3);
+
+Save/load (lesson 02/3) - We should express concerns about different MATLAB syntaxes for these commands, as well as Octave's different syntax too! Furthermore, Octave save format is incompatable with MATLAB's (at least for 2018b or greater) and so we should always generate data in MATLAB, which the Octave kernel seems to be able to deal with.
